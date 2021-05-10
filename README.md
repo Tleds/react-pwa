@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+Nome do desenvolvedor: Tiago Luca
+Nome da aplicação: mestre_zaza_pwa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A aplicação é bem simples e tem como objetivo a visualização de programas de treino no celular do cliente
+que podem ser contratados também atravéz so website mestrezaza.com.br.
 
-## Available Scripts
+Página inicial: É a página de entrada da aplicação, nela o usuário faz a autenticação para ter acesso ao restante do sistema.
+    ![Alt text](/public/images/home_print.png?raw=true "Entrar")
 
-In the project directory, you can run:
+Página de registro: É a página onde o usuário se cadastra para acessar a plataforma.
+    ![Alt text](/public/images/register_print.png?raw=true "Inscrever-se")
 
-### `yarn start`
+Pagina home: É a página inicial depois que o usuário se autentica, nela você visualiza os últimos vídeos postados do mestre zaza.
+    ![Alt text](/public/images/home_ini_print.png?raw=true "Inicial")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Página de notificação: É a página que o usuário visualiza todas as notificações da conta dele.
+    ![Alt text](/public/images/home_ini_print.png?raw=true "Notificações")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Página de planos: É a página onde o usuário contrata os programas de treino.
+    ![Alt text](/public/images/plans_print.png?raw=true "Planos")
 
-### `yarn test`
+Página de planos final: É a página de agradecimento ao usuário depois que ele compra um programa de treino.
+    ![Alt text](/public/images/plans_final_print.png?raw=true "Planos final")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Página de treinos: É a página onde tem todos os planos contratados pelo usuário.
+    ![Alt text](/public/images/trainings_print.png?raw=true "Treinos")
 
-### `yarn build`
+Página de detalhes do treino: É a página onde o usuário consegue visualizar o programa de treino que ele comprou.
+    ![Alt text](/public/images/trainings_details_print.png?raw=true "Treinos Detalhe")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Nós usamos o fetch para fazer as requisições dos dados do usuário em um servidor remoto, porém, devido 
+a alguns problemas na API as requisições não foram feitas. A lógica de armazenamento seria de armazenar apenas
+o token do usuário e deixar a responsabilidade para a API guardar de forma segura estes dados em uma base de dados
+postgress. O usuário precisaria então apenas do token, que receberia logo depois de efetuar o login na plataforma.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    A aplicação é original e não uma cópia da aplicação de um colega ou de uma aplicação já existente?
+    SIM
+    A aplicação tem pelo menos duas interfaces (telas ou páginas) independentes?
+    SIM
+    A aplicação armazena e usa de forma relevante dados complexos do usuário?
+    NÃO, pois o objetivo seria utilizar um API externa para ter essa responsabilidade.
+    A aplicação possui um manifesto para instalação no dispositivo do usuário?
+    SIM
+    A aplicação possui um service worker que permite o funcionamento off-line?
+    SIM
+    O código da minha aplicação possui comentários explicando cada operação?
+    NÃO, acredito que comentários sujam mais o código do que explicam algo, por isso 
+    foco muito mais em programar de uma maneira simples que todos entendam do que comentar o código
+    A aplicação está funcionando corretamente?
+    SIM
+    A aplicação está completa?
+    NÃO, faltou a comunicação com o servidor para solicitação dos dados necessários.
