@@ -39,6 +39,10 @@ postgress. O usuário precisaria então apenas do token, que receberia logo depo
     SIM
     A aplicação armazena e usa de forma relevante dados complexos do usuário?
     NÃO, pois o objetivo seria utilizar um API externa para ter essa responsabilidade.
+    A aplicação foi desenvolvida com o React?
+    SIM
+    A aplicação contém pelo menos dois componentes React além do componente principal?
+    SIM
     A aplicação possui um manifesto para instalação no dispositivo do usuário?
     SIM
     A aplicação possui um service worker que permite o funcionamento off-line?
